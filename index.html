@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0A0A0A" />
+<title>arciuze — social that's actually social</title>
+<meta name="description" content="A social network where profiles, DMs and people unlock only after you show up. Rooted in real-world events and communities." />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="dot-grid" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#" class="nav__logo" aria-label="arciuze home">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M7 14.5 12 6l5 8.5M9 12h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>arciuze</span>
+  </a>
+  <nav class="nav__links" aria-label="primary">
+    <a href="#thesis">Thesis</a>
+    <a href="#how">How it works</a>
+    <a href="#signals">Signals</a>
+    <a href="#privacy">Privacy</a>
+  </nav>
+  <a href="#waitlist" class="nav__cta">
+    <span>Get early access</span>
+    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 8h8m-3-3 3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+
+    <div class="hero__meta" data-reveal>
+      <span class="tag tag--pulse"><span class="tag__dot"></span>v1.0 · IRL social</span>
+      <span class="tag tag--mono">REC · NO <span class="num-scramble" data-target="00421">00000</span></span>
+    </div>
+
+    <h1 class="hero__title" data-reveal>
+      <span class="hero__line"><span class="kerned">Social that</span></span>
+      <span class="hero__line"><em class="hero__em">actually</em> <span class="kerned">requires</span></span>
+      <span class="hero__line"><span class="kerned">showing up.</span></span>
+    </h1>
+
+    <div class="hero__grid">
+      <p class="hero__lede" data-reveal>
+        <span class="lede__lead">arciuze is a social network gated by the real world.</span>
+        Your feed, your DMs, and the people you meet are unlocked by attending the same events — verified with a scan, not a follow.
+      </p>
+
+      <!-- TICKET STUB -->
+      <aside class="ticket" data-reveal data-tilt aria-label="Sample event pass">
+        <div class="ticket__body">
+          <div class="ticket__head">
+            <div class="ticket__brand">
+              <span class="ticket__mark">A</span>
+              <span class="ticket__name">arciuze pass</span>
+            </div>
+            <span class="ticket__tier">MEMBER · ATTENDEE</span>
+          </div>
+
+          <div class="ticket__event">
+            <span class="ticket__eyebrow">Event · Brooklyn</span>
+            <h3 class="ticket__title">Late Night <br/>Analogue Film <br/>Society</h3>
+          </div>
+
+          <div class="ticket__meta">
+            <div>
+              <span class="ticket__label">Date</span>
+              <span class="ticket__value">Fri · 17 Apr</span>
+            </div>
+            <div>
+              <span class="ticket__label">Gate</span>
+              <span class="ticket__value">21:30</span>
+            </div>
+            <div>
+              <span class="ticket__label">Pass</span>
+              <span class="ticket__value">#A-0421</span>
+            </div>
+          </div>
+
+          <div class="ticket__stamp" aria-hidden="true">
+            <span>verified</span>
+          </div>
+        </div>
+
+        <div class="ticket__perf" aria-hidden="true"></div>
+
+        <div class="ticket__stub">
+          <div class="ticket__qr" aria-hidden="true">
+            <div class="qr__code">
+              <!-- 11×11 grid generated as background in CSS; overlay scan line -->
+            </div>
+            <div class="qr__scanline"></div>
+          </div>
+          <span class="ticket__stub-label">Scan at door</span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="hero__cta" data-reveal>
+      <a href="#waitlist" class="btn btn--primary">
+        <span>Request an invite</span>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#how" class="btn btn--ghost">
+        <span>How it works</span>
+      </a>
+      <span class="hero__note">iOS · rolling in cities — <a href="#waitlist">join waitlist</a></span>
+    </div>
+
+  </div>
+
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>No strangers in your DMs.</span><span class="dot">●</span>
+      <span>No bought followers.</span><span class="dot">●</span>
+      <span>No infinite feed of nobody.</span><span class="dot">●</span>
+      <span>Attend · Scan · Unlock.</span><span class="dot">●</span>
+      <span>No strangers in your DMs.</span><span class="dot">●</span>
+      <span>No bought followers.</span><span class="dot">●</span>
+      <span>No infinite feed of nobody.</span><span class="dot">●</span>
+      <span>Attend · Scan · Unlock.</span><span class="dot">●</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THESIS ============ -->
+<section class="thesis" id="thesis">
+  <span class="section__marker">01 — Thesis</span>
+  <div class="thesis__grid">
+    <blockquote class="thesis__quote" data-reveal>
+      <span aria-hidden="true" class="thesis__quote-mark">“</span>
+      The feed became a room full of people you've never met, performing for people they'll never meet. We wanted the opposite: a social app where the room is real, and only the people who showed up get in.
+    </blockquote>
+    <div class="thesis__stats">
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count-to="99">0</span><span class="stat__unit">%</span>
+        <span class="stat__label">of the average feed is strangers performing for other strangers.</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count-to="1">0</span><span class="stat__unit">×</span>
+        <span class="stat__label">the only multiplier that matters here: you were in the room.</span>
+      </div>
+      <div class="stat" data-reveal>
+        <span class="stat__num" data-count-to="0">0</span><span class="stat__unit">DM</span>
+        <span class="stat__label">from a stranger. Ever. Our gate is server-enforced.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <span class="section__marker">02 — Mechanism</span>
+  <h2 class="section__title" data-reveal>
+    Three steps. One <em>rule</em>. <br/>
+    <span class="section__sub">You have to be there.</span>
+  </h2>
+
+  <ol class="steps">
+    <li class="step" data-reveal>
+      <span class="step__idx">01</span>
+      <div class="step__body">
+        <h3>Pick your communities.</h3>
+        <p>Tell us what you're actually into — film, climbing, hardware, whatever. We match you to communities built around that, not follower counts.</p>
+        <div class="chips" aria-hidden="true">
+          <span class="chip">· film</span>
+          <span class="chip">· climbing</span>
+          <span class="chip">· hardware</span>
+          <span class="chip">· electronic</span>
+          <span class="chip">· poetry</span>
+          <span class="chip">· run club</span>
+          <span class="chip">· sailing</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="step" data-reveal>
+      <span class="step__idx">02</span>
+      <div class="step__body">
+        <h3>Show up to events.</h3>
+        <p>Each community runs real-world gatherings. RSVP in-app. You become a <em>member</em>. Cheap or free, small or large — the point is you're actually there.</p>
+        <div class="event-mini" aria-hidden="true">
+          <div class="event-mini__row"><span>Fri 17 Apr · 21:30</span><span class="event-mini__pill">RSVP'd</span></div>
+          <div class="event-mini__row"><span>Sat 18 Apr · 14:00</span><span class="event-mini__pill event-mini__pill--muted">Going?</span></div>
+          <div class="event-mini__row"><span>Sun 19 Apr · 10:00</span><span class="event-mini__pill event-mini__pill--muted">Going?</span></div>
+        </div>
+      </div>
+    </li>
+
+    <li class="step step--scan" data-reveal>
+      <span class="step__idx">03</span>
+      <div class="step__body">
+        <h3>Scan at the door — unlock the room.</h3>
+        <p>The organizer's QR is an HMAC-signed payload. A scan upgrades you from <em>member</em> to <em>attendee</em>. That's the key to DMs, full profiles, and the people you met.</p>
+        <div class="scan-panel" aria-hidden="true">
+          <div class="scan-panel__viewfinder">
+            <span class="scan-panel__corner scan-panel__corner--tl"></span>
+            <span class="scan-panel__corner scan-panel__corner--tr"></span>
+            <span class="scan-panel__corner scan-panel__corner--bl"></span>
+            <span class="scan-panel__corner scan-panel__corner--br"></span>
+            <div class="scan-panel__qr"></div>
+            <div class="scan-panel__line"></div>
+          </div>
+          <div class="scan-panel__status">
+            <span class="scan-panel__dot"></span>
+            <span>verifying · HMAC · ev_A0421</span>
+          </div>
+          <div class="scan-panel__result">
+            <span class="scan-panel__badge">attendee</span>
+            <span>DM gate opened with 37 people</span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ SIGNALS ============ -->
+<section class="signals" id="signals">
+  <span class="section__marker">03 — Feed physics</span>
+  <h2 class="section__title" data-reveal>
+    Your feed is ranked by <br/>
+    <em>who was in the room</em>.
+  </h2>
+  <p class="signals__lede" data-reveal>
+    No magic. No black box. The fan-out pipeline scores every post at creation and re-scores it every thirty minutes. These are the only multipliers:
+  </p>
+
+  <div class="signals__grid">
+    <article class="signal signal--hero" data-reveal>
+      <span class="signal__weight">5.0<span class="signal__x">×</span></span>
+      <h3>Attended</h3>
+      <p>They were there. You were there. Scans matched. This is the multiplier everything else measures against.</p>
+    </article>
+    <article class="signal" data-reveal>
+      <span class="signal__weight">3.0<span class="signal__x">×</span></span>
+      <h3>Joined</h3>
+      <p>RSVP'd to the same event, but the scans didn't match. Still high intent.</p>
+    </article>
+    <article class="signal" data-reveal>
+      <span class="signal__weight">2.0<span class="signal__x">×</span></span>
+      <h3>Friend</h3>
+      <p>Mutually accepted friend. Adds a further 1.5× boost — but only after both scans.</p>
+    </article>
+    <article class="signal" data-reveal>
+      <span class="signal__weight">1.5<span class="signal__x">×</span></span>
+      <h3>Community</h3>
+      <p>Shared community, no event overlap yet. Consider it a seed.</p>
+    </article>
+    <article class="signal signal--formula" data-reveal>
+      <span class="signal__label">Formula</span>
+      <code class="formula">
+        priority = (1 + log(1 + likes·3 + comments·5))
+        <br/>× 0.5^(age<sub>h</sub> / 12)
+        <br/>× affinity × friend × 1000
+      </code>
+      <span class="signal__foot">Half-life: 12 h. Re-scored every 30 min.</span>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PRIVACY MODES ============ -->
+<section class="privacy" id="privacy">
+  <span class="section__marker">04 — Surface area</span>
+  <h2 class="section__title" data-reveal>
+    Three ways to be <em>seen</em>. <br/>
+    <span class="section__sub">Per event. Per person. You choose.</span>
+  </h2>
+
+  <div class="modes">
+    <article class="mode mode--public" data-reveal>
+      <header class="mode__head">
+        <span class="mode__idx">Mode A</span>
+        <span class="mode__dot"></span>
+      </header>
+      <h3>Public</h3>
+      <p class="mode__desc">Every member of the event sees your full profile. Posts, grid, bio — the whole thing.</p>
+      <ul class="mode__list">
+        <li>Full profile visible</li>
+        <li>All posts surface in-event</li>
+        <li>DMs unlocked to attendees</li>
+      </ul>
+    </article>
+    <article class="mode mode--private" data-reveal>
+      <header class="mode__head">
+        <span class="mode__idx">Mode B</span>
+        <span class="mode__dot"></span>
+      </header>
+      <h3>Private</h3>
+      <p class="mode__desc">Members see a minimal card. Only fellow <em>attendees</em> — people who scanned in — see your full feed.</p>
+      <ul class="mode__list">
+        <li>Bio, avatar, name only</li>
+        <li>Full profile to attendees</li>
+        <li>DMs unlocked to attendees</li>
+      </ul>
+    </article>
+    <article class="mode mode--ghost" data-reveal>
+      <header class="mode__head">
+        <span class="mode__idx">Mode C</span>
+        <span class="mode__dot"></span>
+      </header>
+      <h3>Ghost</h3>
+      <p class="mode__desc">Invisible to strangers. Only accepted friends see anything. For when you're just there to be there.</p>
+      <ul class="mode__list">
+        <li>Hidden from non-friends</li>
+        <li>Friends see full profile</li>
+        <li>DMs restricted to friends</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF / CITIES ============ -->
+<section class="cities" aria-labelledby="cities-title">
+  <span class="section__marker">05 — Where</span>
+  <h2 class="section__title" id="cities-title" data-reveal>
+    Rolling out, <em>room by room</em>.
+  </h2>
+  <div class="cities__list">
+    <div class="city" data-reveal><span class="city__name">Brooklyn</span><span class="city__status city__status--live">· live</span></div>
+    <div class="city" data-reveal><span class="city__name">Los Angeles</span><span class="city__status city__status--live">· live</span></div>
+    <div class="city" data-reveal><span class="city__name">London</span><span class="city__status city__status--soon">· summer</span></div>
+    <div class="city" data-reveal><span class="city__name">Berlin</span><span class="city__status city__status--soon">· summer</span></div>
+    <div class="city" data-reveal><span class="city__name">Mexico CDMX</span><span class="city__status city__status--soon">· summer</span></div>
+    <div class="city" data-reveal><span class="city__name">Tokyo</span><span class="city__status city__status--waitlist">· waitlist</span></div>
+    <div class="city" data-reveal><span class="city__name">Paris</span><span class="city__status city__status--waitlist">· waitlist</span></div>
+    <div class="city" data-reveal><span class="city__name">Lisbon</span><span class="city__status city__status--waitlist">· waitlist</span></div>
+  </div>
+</section>
+
+<!-- ============ WAITLIST / CTA ============ -->
+<section class="waitlist" id="waitlist">
+  <span class="section__marker">06 — Entry</span>
+  <div class="waitlist__inner">
+    <h2 class="waitlist__title" data-reveal>
+      <span>Show</span>
+      <span class="waitlist__em">up.</span>
+    </h2>
+    <p class="waitlist__lede" data-reveal>
+      We send a handful of invites each week, prioritized by the community closest to you. No algorithm, a human reads every request.
+    </p>
+    <form class="form" data-reveal onsubmit="return window.__arciuzeSubmit(event)">
+      <label class="form__field">
+        <span class="form__label">Email</span>
+        <input class="form__input" type="email" name="email" placeholder="you@yours.io" required />
+      </label>
+      <label class="form__field">
+        <span class="form__label">City</span>
+        <input class="form__input" type="text" name="city" placeholder="Brooklyn" required />
+      </label>
+      <label class="form__field form__field--wide">
+        <span class="form__label">One community you'd join tomorrow</span>
+        <input class="form__input" type="text" name="community" placeholder="late-night analogue film" />
+      </label>
+      <button type="submit" class="btn btn--primary btn--wide">
+        <span class="form__cta-label">Request invite</span>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form__legal">By requesting, you accept the <a href="/terms">terms</a> and <a href="/privacy">privacy policy</a>. We won't sell your email — we don't even have ads.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M7 14.5 12 6l5 8.5M9 12h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>arciuze</span>
+    </div>
+    <nav class="foot__links" aria-label="footer">
+      <a href="#top">iOS app</a>
+      <a href="mailto:hello@arciuze.com">Host an event</a>
+      <a href="mailto:press@arciuze.com">Press</a>
+      <a href="mailto:careers@arciuze.com">Careers</a>
+      <a href="mailto:support@arciuze.com">Help</a>
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+    </nav>
+    <div class="foot__mono">
+      <span>© 2026 arciuze labs</span>
+      <span>sh.rax.app.Arciuze</span>
+      <span>built in public</span>
+    </div>
+  </div>
+</footer>
+
+<script src="landing.js" defer></script>
+</body>
+</html>
